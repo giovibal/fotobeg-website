@@ -1,3 +1,51 @@
-body {
+.artfont {
     font-family: 'Great Vibes', cursive;
+}
+.navbar-brand {
+    /*font-family: 'Great Vibes', cursive;*/
+    font-size: 130%;
+}
+body {
+    /*font-family: 'Josefin Slab', serif;*/
+    font-family: 'Poiret One';
+    background-image: url('/img/beige_light.jpg');
+}
+nav * {
+    font-size: 110%;
+    font-weight: 400;
+}
+
+.box {
+    /*background: white;*/
+    background-color: #be8173;
+    color: white;
+    /*margin-top: .5em;*/
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.5);
+    border-radius: 3px;
+    border-color: #be8173;
+    padding: 3em;
+}
+
+.lilla-bg { background-color: #be8173 }
+.lilla { color: #be8173 }
+
+.beige-bg { background-color: #be8173 }
+.beige { color: #be8173 }
+
+
+.jumbotron {
+    background-color: #be8173;
+    color: white;
+}
+a, a:hover, a:visited {
+    /*color: #333;*/
+    color: white;
+    font-weight: bold;
+}
+
+img.profile {
+    max-width: 180px;
+    max-height: 180px;
 }

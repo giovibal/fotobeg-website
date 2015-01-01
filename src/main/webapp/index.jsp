@@ -1,25 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html ng-app="mainApp">
   <head>
-    <title>fotobeg.it</title>
+    <title>FotoBEG - Ester Menniti Photography</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
-    <link href='//fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Great+Vibes|Josefin+Slab|Noto+Sans|Poiret+One|Muli' rel='stylesheet' type='text/css'>
     <link href="css/navbar-fixed-top.css" rel="stylesheet" type='text/css'>
     <link href='css/fotobeg.css' rel='stylesheet' type='text/css'>
   </head>
 
   <body ng-controller="mainCtrl">
-    <%--<h1 class="title">FotoBEG - Ester &amp; Simona Menniti Photography</h1>
-
-    <a href="home">home</a> |
-    <a href="info">informazioni</a> |
-    <a href="foto">galleria fotografica</a> |
-    <a href="contatti">contatti</a>
-
-    <div ng-view></div>--%>
-
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -30,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">FotoBEG</a>
+          <a class="navbar-brand artfont" href="/">FotoBEG</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -60,7 +51,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container box">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div ng-view></div>
