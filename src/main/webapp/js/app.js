@@ -32,12 +32,15 @@ app.config(['$routeProvider','$locationProvider',
     }]);
 
 // controllers
-app.controller('homeCtrl', ['$scope', function($scope){
-
+app.controller('mainCtrl', ['$scope', function($scope){
+    $scope.navbar = {};
+    $scope.navbar.active = 'home';
+}]).controller('homeCtrl', ['$scope', function($scope){
+    $scope.navbar.active = 'home';
 }]).controller('infoCtrl', ['$scope', function($scope){
-
+    $scope.navbar.active = 'info';
 }]).controller('fotoCtrl', ['$scope', function($scope){
-
+    $scope.navbar.active = 'foto';
 }]).controller('contattiCtrl', ['$scope', function($scope){
-
+    $scope.navbar.active = 'contatti';
 }]);

@@ -10,7 +10,7 @@
     <link href='css/fotobeg.css' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
+  <body ng-controller="mainCtrl">
     <%--<h1 class="title">FotoBEG - Ester &amp; Simona Menniti Photography</h1>
 
     <a href="home">home</a> |
@@ -34,10 +34,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="home">Home</a></li>
-            <li><a href="/foto">Galleria fotografica</a></li>
-            <li><a href="/info">Informazioni</a></li>
-            <li><a href="/contatti">Contatti</a></li>
+            <li ng-class="{'active' : navbar.active == 'home'}"><a href="/home">Home</a></li>
+            <li ng-class="{'active' : navbar.active == 'foto'}"><a href="/foto">Galleria fotografica</a></li>
+            <li ng-class="{'active' : navbar.active == 'info'}"><a href="/info">Informazioni</a></li>
+            <li ng-class="{'active' : navbar.active == 'contatti'}"><a href="/contatti">Contatti</a></li>
             <%--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
