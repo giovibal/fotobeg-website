@@ -54,7 +54,11 @@
     <div class="container box">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div ng-view></div>
+      <div ng-view>
+
+        <div style='clear: both;'></div>
+      </div>
+
 
     </div> <!-- /container -->
 
@@ -65,5 +69,6 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-animate.min.js"></script>
+  <script src="js/ng-infinite-scroll.js"></script>
   <script src="js/app.js"></script>
 </html>

@@ -1,7 +1,8 @@
 'use strict';
 
 var app = angular.module('mainApp', [
-    'ngRoute'
+    'ngRoute',
+    'infinite-scroll'
 ]);
 
 app.config(['$routeProvider','$locationProvider',
@@ -41,6 +42,19 @@ app.controller('mainCtrl', ['$scope', function($scope){
     $scope.navbar.active = 'info';
 }]).controller('fotoCtrl', ['$scope', function($scope){
     $scope.navbar.active = 'foto';
+    $scope.photos = [];
+
+    $scope.loadData = function() {
+        var max = $scope.photos.length;
+        if(max <= 1000) {
+            for (var i = max; i < (max + 10); i++) {
+                $scope.photos.push({src: '/url/' + i, title: 'photo ' + i});
+            }
+        }
+        console.log('loadData',$scope.photos.length);
+    };
+    //$scope.loadData();
+
 }]).controller('contattiCtrl', ['$scope', function($scope){
     $scope.navbar.active = 'contatti';
 }]);

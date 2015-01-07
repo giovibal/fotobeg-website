@@ -26,6 +26,19 @@ nav * {
     border-radius: 3px;
     border-color: #be8173;
     padding: 3em;
+    /*height: 100%;*/
+    /*height: 400px;*/
+    /*height: 50%;*/
+}
+.box:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.fix_height {
+    height: 100%;
 }
 
 .lilla-bg { background-color: #be8173 }
